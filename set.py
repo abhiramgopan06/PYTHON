@@ -52,3 +52,14 @@ copy1 = developer_two_interesets.copy()
 copy1.add('C#')
 print(copy1)
 print(developer_two_interesets)
+
+
+b1 = {"python", "js", "java"}
+b1.remove("java")
+b1.add("JAVA")
+print(b1)
+
+b2 =  ["python","js","java"]
+b2[2]="JAVA"
+# b2[2].upper()
+print(b2)
