@@ -1,16 +1,12 @@
 names = []
-
 while True:
     print('1. Display all names.')
     print('2. Add new name.')
     print('3. Edit a name.')
     print('4. Delete a name.')
     print('5. Exit.')
-
     choice = input('Enter your choice (1,2,3,4,5)....: ')
-
     match choice:
-
         case "1":
             if len(names) == 0:
                 print('No names found. Add new one.')
