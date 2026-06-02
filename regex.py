@@ -2,10 +2,10 @@ import re
 
 # re.match('pattern','data') match object or None
 
-# s1 = "Hello, world"
-# s2 = 'Hello, world. Hello python, Hello django'
+s1 = "Hello, world"
+s2 = 'Hello, world. Hello python, Hello django'
 
-# p1 = r'Hello'   # raw string
+p1 = r'Hello'   # raw string
 
 # print('hello.\\nworld')
 # print(r'hello.\\nworld')
@@ -70,6 +70,25 @@ print(re.search(r'[\d]{5}','45528975554356'))
 print(re.search(r'[\d]{5,10}','455289765554356'))
 print(re.search(r'[\d]{5,10}','455'))
 
-# \w - world characters | \D - non-digits
+# \w - world characters | \W - non-digits
+print(re.search(r'[\w]{5}', 'hello123'))
+print(re.search(r'[\w]{5,10}', 'python_2026'))
+print(re.search(r'[\w]{5,10}', 'abc'))
 
 # \s - whitespace  |  \S - non-whitesplce
+print(re.search(r'\S', 'Hello World'))
+print(re.search(r'\s', 'Hello  World'))
+print(re.search(r'\s', 'HelloWorld'))
+
+# re.sub('pattern','character','string')
+print(re.sub(r'b','*','i am bob'))
+print(re.sub(r'\d','*',"my number is 89876433345"))
+
+# re.split('pattern','string')
+print(re.split(r',','Apple,Grapes,Orange'))
+
+
+print(re.search(r'^[6-9]\d{9}$','8552894356'))
+
+
+
