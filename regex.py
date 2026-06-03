@@ -92,3 +92,10 @@ print(re.search(r'^[6-9]\d{9}$','8552894356'))
 
 
 
+# python phone no validation only 10 number no other between first no 6-9 only
+mobile = input("Enter Mobile Number: ")
+if re.fullmatch(r'[6-9]\d{9}', mobile):
+    print("Valid Mobile Number")
+else:
+    print("Invalid Mobile Number")
+
